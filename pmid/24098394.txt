@@ -1,0 +1,1 @@
+Overall, pathway analysis revealed that differentially expressed genes that showed higher levels of expression in neurons derived from T-iPSCs were enriched for genes implicated in schizophrenia (SZ).

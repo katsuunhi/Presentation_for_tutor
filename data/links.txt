@@ -1,0 +1,84 @@
+[{
+            value: '23053546',
+            source: 'oleuropein',
+            target: 'cleavage',
+            label:{
+              normal:{
+                show: true,
+                formatter: 'AUGMENTS'
+              }
+            }
+            
+        }, {
+            value: "#271987 10788422 19128569",
+            source: 'cleavage',
+            target: 'prl', 
+            label:{
+              normal:{
+                show: true,
+                formatter: 'PRODUCES'
+              }
+            }
+        },{
+            value: '11275703 10788422 16043870',
+            source: 'prl',
+            target: 'angiogenesis',
+            label:{
+              normal:{
+                show: true,
+                formatter: 'DISRUPTS'
+              }
+            }
+        },{
+            value: '9884333 12023382 17968334 18819684 24102428',
+            source: 'angiogenesis',
+            target: 'inflammatory_disease',
+            label:{
+              normal:{
+                show: true,
+                formatter: 'AFFECTS'
+              }
+            }
+        },{
+            value: '16236331 20335636 22214867',
+            source: 'oleuropein',
+            target: 'oxidative_stress',
+            label:{
+              normal:{
+                show: true,
+                formatter: 'TREATS'
+              }
+            }
+            
+        },{
+            value: '15292654',
+            source: 'oxidative_stress',
+            target: 'lipoxygenase',
+            label:{
+              normal:{
+                show: true,
+                formatter: 'PRODUCES'
+              }
+            }
+        },{
+            value: '10733500 19286633',
+            source: 'lipoxygenase',
+            target: 'angiogenesi',
+            label:{
+              normal:{
+                show: true,
+                formatter: 'DISRUPTS'
+              }
+            }
+        },{
+            value: '9884333 12023382 17968334 18819684 24102428',
+            source: 'angiogenesi',
+            target: 'inflammatory_disease',
+            label:{
+              normal:{
+                show: true,
+                formatter: 'AFFECTS'
+              }
+            }
+        }
+        ]

@@ -1,0 +1,269 @@
+<!-- Bootstrap -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>pressentation</title>
+  <script src="js/echarts.min.js"></script>
+  <script src="js/ajaxCreateRequest.js"></script> 
+  <script src="js/jquery-3.3.1.min.js"></script> 
+ <!--  <link rel="stylesheet" href="css/style.css"> -->
+</head>
+
+
+<body>
+  <header>
+    <nav>
+      <ul>
+      	<div id="diseases_div">
+        	<p>diseases</p>
+	          <select id="diseases" onchange="selected_disease()">
+	          	<option value="null">请选择</option>
+	            <option value="candidate_drugs_for_inflammatory_disease_div">inflammatory_disease</option>
+	            <option value="candidate_drugs_for_schizophrenia_div">schizophrenia</option>
+	          </select>
+    	</div>
+    	
+		
+
+
+    	<div id="candidate_drugs_for_inflammatory_disease_div">
+    		<p>candidate drugs for inflammatory disease</p>
+				<select id="candidate_drugs_for_inflammatory_disease" onchange="display_graph1()">
+					<option>请选择</option>
+					<option value="graph">oleuropein</option>
+				</select>
+		</div>
+		<script>
+			map_num = 0;
+			function selected_disease(){
+    			document.getElementById("graph").style.display = "none"; //隐藏图层
+    			document.getElementById("tooltip").style.display = "none";
+    			var select = document.getElementById("diseases");
+    			var option = select.selectedIndex;
+    			var i = 1;
+    			if(option == 0){                            //隐藏所有药物
+    				for(i; i < select.length; i ++)
+    					document.getElementById(select[i].value).style.display = "none";
+    				return 0;
+    			}
+    			var div = document.getElementById(select[option].value);
+    			div.style.display = "block";
+    			document.getElementById(select[option].value.replace("_div", ""))[0].selected = true;//选择“请选择”
+    			
+    			for(i; i < select.length; i ++)          //隐藏其他药物
+    				if(i != option)
+    					document.getElementById(select[i].value).style.display = "none";
+    		}
+
+    		function display_graph1(){
+    			map_num = 0;
+    			var select = document.getElementById("candidate_drugs_for_inflammatory_disease");
+    			var option = select.selectedIndex;
+    			var div = document.getElementById(select[option].value);
+    			var i = 1;
+    			div.style.display = "block";
+    			document.getElementById("tooltip").style.display = "block";
+    			for(i; i < select.length; i ++)
+    				if(i != option)
+    					document.getElementById(select[i].value).style.display = "none";
+    		}
+
+    		function display_graph2(){
+    			map_num = 1;
+    			var select = document.getElementById("candidate_drugs_for_schizophrenia");
+    			var option = select.selectedIndex;
+    			var div = document.getElementById(select[option].value);
+    			var i = 0;
+    			div.style.display = "block";
+    			document.getElementById("tooltip").style.display = "block";
+    			for(i; i < select.length; i ++)
+    				if(i != option)
+    					document.getElementById(select[i].value).style.display = "none";
+    		}
+    	</script>
+
+		<div id="candidate_drugs_for_schizophrenia_div">
+			<p>candidate drugs for schizophrenia</p>
+				<select id="candidate_drugs_for_schizophrenia" onchange="display_graph2()"> 
+					<option>请选择</option>
+					<option value="graph">quetiapine</option>
+				</select>
+		</div>
+
+      </ul>
+    </nav>
+  </header>
+<style> 
+	.black_overlay{  display: none;  position: absolute;  top: 0%;  left: 0%;  width: 100%;  height: 100%;  background-color: black;  z-index:1001;  -moz-opacity: 0.8;  opacity:.80;  filter: alpha(opacity=80);  }  
+	.white_content {  display: none;  position: absolute;  top: 25%;  left: 25%;  width: 50%;  height: 50%;  padding: 16px;  border: 16px solid orange;  background-color: white;  z-index:1002;  overflow: auto;  } 
+
+	.text_of_drugs span{background-color: aqua}
+	.text_of_drugs a{background-color: #ADFF2F}
+	.tree{display:none;}
+	.searchDiv{text-align: center;}
+	#diseases_div{ position:absolute; top:0; left:30; width:200px; height:100%;} 
+	#candidate_drugs_for_inflammatory_disease_div{ margin-left:200px; height:100%; display: none;}
+	#candidate_drugs_for_schizophrenia_div{ margin-left:200px; height:100%; display: none;}
+	p{width: auto; height: 30px;}
+	#tooltip{border:2px solid #000; position: absolute; right: 10px; top: 200px; width: 300px; height: 300px;overflow: auto; text-align: justify; text-justify: inter-ideograph; padding: 1em; display: none; word-wrap: break-word; white-space: pre-wrap;}
+	#test{border:2px solid #000; position: absolute; right: 10px; top: 0px; width: 300px; height: 300px;overflow: auto; text-align: justify; text-justify: inter-ideograph; padding: 1em; word-wrap: break-word; white-space: pre-wrap;}
+	#graph{width:1000px; height: 1000px;float:left; background: none; display: none;}
+</style> 
+
+
+
+
+
+<div id="graph"></div>
+
+<pre id="tooltip"></pre>
+
+<script type="text/javascript"> 
+
+var dom = document.getElementById("graph");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+$.get('data.json', function (data) {
+	$.get('link.json',function(link){
+		data = data[map_num];
+		link = link[map_num]
+
+		myChart.setOption(option = {
+		    title: {
+		        text: 'graph'
+		    },
+		    tooltip: {
+		 //      formatter: "{c}"
+		        /*function(x) {
+		            alert({b});
+		            return x.name;
+		        }*/
+		        /*formatter: function(params){
+		        	var tooltip = document.getElementById("tooltip");
+		        	tooltip.value = "";
+		        	var pmid = params.value.split(" ");
+		        	var i = 0;
+		        	for(i; i < pmid.length; i ++)
+						htmlobj=$.ajax({url:"pmid/" + pmid[i] + ".txt",async:false, success: function(responseText){tooltip.value += pmid[i] + "\t" + responseText + "\n";}, error:function(){tooltip.value += pmid[i] + "\t未找到文件\n";}});
+		        	return '<div class="toolDiv">${params[0].name}</div>';
+				}*/
+		    },
+		    series: [{
+		        type: 'graph',
+		        layout: 'none',
+		        roam: true,
+		 //       symbol:  'Rectangle',
+		 //       symbol: 'circle',
+		//        edgeSymbol: ['rectangle', 'arrow'],
+		        edgeSymbol: ['circle', 'arrow'],
+		        symbolSize: 80,
+		        edgeSymbolSize: [4, 10],
+		        edgeLabel: {
+		            normal: {
+		                textStyle: {
+		                    fontSize: 15,
+		                }
+		            }
+		        },
+		        itemStyle: {
+		            normal: {
+		                color: 'green'//'#4b565b',
+		            }
+		        },
+		        lineStyle: {
+		            normal: {
+		                width: 2,
+		                color: '#4b565b'
+		            }
+		        },
+		        label: {
+		            normal: {
+		                show: true,
+		                textStyle:{
+		                  fontSize: 15,
+		                  color: 'black'
+		                }
+		            }
+		        },
+		        
+		        data:data,
+		        links:link  
+		    }]
+		});
+	});
+})
+myChart.on('click', function (edgeData) {
+    var tooltip = document.getElementById("tooltip");
+	tooltip.innerHTML = "";
+	var pmid = edgeData.value;//.value.split(" ");
+
+	var i = 0;
+	for(i; i < pmid.length; i ++)
+	htmlobj=$.ajax({url:"pmid/" + pmid[i] + ".txt",async:false, success: function(responseText){tooltip.innerHTML += pmid[i] + "\t" + responseText + "\n\n";}, error:function(){tooltip.innerHTML += pmid[i] + "\t未找到文件\n";}});
+
+	                //prl > angiogenesis
+	var head = edgeData.name.split(" > ")[0];
+	head_re = eval("/" + head + "/i");
+	var tail_old = edgeData.name.split(" > ")[1];
+	var tail = tail_old.replace("_"," ");
+	tail_re = eval("/" + tail + "/i");
+	var str = tooltip.innerHTML.split(head_re);
+	$("#tooltip").html(str[0]);
+//	$("#tooltip").append("<mark>" + head + "</mark>");
+	for(i = 1; i < str.length; i ++){
+	
+		$("#tooltip").append("<mark>" + head + "</mark>");
+			$("#tooltip").append(str[i]);
+	}
+
+	var str = tooltip.innerHTML.split(tail_re);
+	$("#tooltip").html(str[0]);
+//	$("#tooltip").append("<mark>" + tail + "</mark>");
+	for(i = 1; i < str.length; i ++){
+		
+		$("#tooltip").append("<mark>" + tail + "</mark>");
+		$("#tooltip").append(str[i]);
+	}
+		
+});
+
+</script>
+
+
+<!-- <pre id="test">bbb<mark>aaa</mark>ccc</pre>
+		<script>
+
+			$("#test").append("<mark>hello</mark>");
+			/*var red = document.createElement("font");
+			red.style.color="red";
+			red.innerText="a\n\n\n<mark>3</mark>";
+			document.getElementById("test").appendChild(red);*/
+
+		</script> -->
+
+
+<script language="javascript" type="text/javascript">  
+$(document).ready(function(){
+            $(".pmid").click(function () {
+  //            var pmid=$(this).attr("id");
+        var pmid=$(this).html();
+                htmlobj=$.ajax({url:"pmid/" + pmid + ".txt",async:false});
+                alert(htmlobj.responseText);
+            })
+        });
+
+function getPmid(){
+  var pmid = document.getElementById("search").value;
+  htmlobj=$.ajax({url:"pmid/" + pmid + ".txt",async:false, success: function(responseText){alert(responseText);}, error:function(){alert("请输入正确的Pmid！");}});
+
+}
+</script>  
+</body> 
+
+
+</html> 

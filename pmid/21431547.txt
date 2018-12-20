@@ -1,0 +1,1 @@
+We compared the set of genes whose expression is modified in schizophrenia, as revealed by our microarray studies, with genes specifically expressed in stem cells, as revealed by studies on human embryonic stem cells.

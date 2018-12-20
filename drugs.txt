@@ -1,0 +1,183 @@
+oleuropein AUGMENTS cleavage PRODUCES prl DISRUPTS angiogenesis AFFECTS inflammatory_disease 0.671524
+C0069413 AUGMENTS C1330957 PRODUCES C0033371 DISRUPTS C0302600 AFFECTS C1290884
+
+C0069413	AUGMENTS	C1330957
+23053546	140350051	Oleuropein, an anti-oxidant polyphenol constituent of olive promotes alpha-secretase cleavage of the amyloid precursor protein (AbetaPP).
+
+C1330957	PRODUCES	C0033371
+#271987	13030623	The prolactin produced by post-translational cleavage of radiolabeled preprolactin has been shown, by partial amino-terminal sequence analysis, to have the correct amino terminus.
+10788422	71647853	Recent studies have demonstrated that the 16-kDa N-terminal proteolytic cleavage product of PRL (16K-PRL) acts as a potent inhibitor of angiogenesis.
+19128569	123353671	A brief review of the literature is provided with emphasis on recent data indicating that an antiangiogenic cleavage product of prolactin contributes to the molecular mechanisms underlying peripartum cardiomyopathy, and that blocking the release of prolactin with bromocriptine can ameliorate the condition.
+
+C0033371	DISRUPTS	C0302600
+11275703	61353867	However, inhibition of angiogenesis and suppression of lactogenic hormones might represent alternative mechanisms, in particular in breast cancer.
+10788422	71647853	Recent studies have demonstrated that the 16-kDa N-terminal proteolytic cleavage product of PRL (16K-PRL) acts as a potent inhibitor of angiogenesis.
+16043870	88862393	Prolactins are natural inhibitors of angiogenesis in the retina.
+
+C0302600	AFFECTS	C1290884
+9884333	64937272	Rheumatoid arthritis (RA) is an inflammatory disease associated with intense angiogenesis and vascular expression of integrin alphavbeta3.
+12023382	73536218	Because angiostatin is a potent inhibitor of angiogenesis, tumor growth, and metastasis, the data suggest that activated PMN not only act as potent effectors of inflammation, but might also play a critical role in the inhibition of angiogenesis in inflammatory diseases and tumors, by generation of a potent anti-angiogenic molecule.
+17968334	103007449	Furthermore, angiogenesis might be targeted by several specific approaches that could be therapeutically used to control inflammatory diseases.
+18819684	129884555	The role of angiogenesis in tumor growth, exsudative retinopathies and some inflammatory diseases has been established in animal models and in the clinical setting Angiogenesis is necessary for oxygen and nutrient delivery to tissues.
+24102428	151026969	Abstract Background and Objective: Angiopoietin-2 (Ang-2) is an important mediator of angiogenesis and has been implicated in many inflammatory diseases.
+
+
+
+oleuropein TREATS oxidative_stress PRODUCES lipoxygenase DISRUPTS angiogenesis AFFECTS inflammatory_disease  0.521445
+C0069413 TREATS C0242606 PRODUCES C0023837 DISRUPTS C0302600 AFFECTS C1290884
+
+C0069413	TREATS	C0242606
+16236331	88069300	This study aimed to evaluate the significance of supplementation of oleuropein in reducing oxidative stress and hyperglycemia in alloxan-induced diabetic rabbits.
+20335636	125387402	These results strongly suggest that an OLE containing polyphenols such as oleuropein and hydroxytyrosol reverses the chronic inflammation and oxidative stress that induces the cardiovascular, hepatic, and metabolic symptoms in this rat model of diet-induced obesity and diabetes without changing blood pressure.
+22214867	135055126	In both treatment protocols, oleuropein significantly attenuated oxidative/nitrosative stress and inflammatory response and improved histological and plasma markers of liver damage.
+
+C0242606	PRODUCES	C0023837
+15292654	98735063	Moreover, oxidative stress leads to an increased production of lipoxygenase derivatives which also play a role in diabetic nephropathy.
+
+C0023837	DISRUPTS	C0302600
+10733500	61365977	In agreement with the critical role of 12-LOX in endothelial cell angiogenic responses in vitro, the 12-LOX inhibitor BHPP significantly reduced bFGF-induced angiogenesis in vivo using a Matrigel implantation bioassay.
+19286633	127403805	siRNA knockdown of 12-lipoxygenase (12-LO) expression attenuates VEGF-induced angiogenesis in HUVECs, and the addition of 12(S)-HETE to the 12-LO knockdown-HUVECs restores VEGF-induced angiogenesis.
+
+C0302600	AFFECTS	C1290884
+9884333	64937272	Rheumatoid arthritis (RA) is an inflammatory disease associated with intense angiogenesis and vascular expression of integrin alphavbeta3.
+12023382	73536218	Because angiostatin is a potent inhibitor of angiogenesis, tumor growth, and metastasis, the data suggest that activated PMN not only act as potent effectors of inflammation, but might also play a critical role in the inhibition of angiogenesis in inflammatory diseases and tumors, by generation of a potent anti-angiogenic molecule.
+17968334	103007449	Furthermore, angiogenesis might be targeted by several specific approaches that could be therapeutically used to control inflammatory diseases.
+18819684	129884555	The role of angiogenesis in tumor growth, exsudative retinopathies and some inflammatory diseases has been established in animal models and in the clinical setting Angiogenesis is necessary for oxygen and nutrient delivery to tissues.
+24102428	151026969	Abstract Background and Objective: Angiopoietin-2 (Ang-2) is an important mediator of angiogenesis and has been implicated in many inflammatory diseases.
+
+
+
+oleuropein INHIBITS glucose COEXISTS_WITH gipr ISA receptor AFFECTS inflammatory_disease 0.38775
+C0069413 INHIBITS C0017725 COEXISTS_WITH C0061126 ISA C0597357 AFFECTS C1290884
+
+C0069413	INHIBITS	C0017725
+19725535	106821176	The administration, for 4 weeks, of oleuropein and hydroxytyrosol rich extracts, leading to 8 and 16 mg/kg body weight of each compound, significantly decreased the serum glucose and cholesterols levels and restored the antioxidant perturbations.
+
+C0017725	COEXISTS_WITH	C0061126
+12676650	68250915	Glucose and methyl pyruvate stimulated 1.4- and 1.6-fold increases, respectively, in the ATP-to-ADP ratio in GIP/Ins cells.
+
+C0061126	ISA	C0597357
+8958204	56336461	Competition binding assays using stably transfected L293 cells demonstrated an IC50 for GIP receptor binding of 7 nmol/liter for GIP (1-42) and 200 nmol/liter for GIP (7-30)-NH2, whereas glucagonlike peptide-1 (GLP-1) binding to its receptor on ++betaTC3 cells was minimally displaced by GIP (7-30)-NH2.
+23851294	152067174	Glucose-dependent insulinotropic polypeptide (GIP) is one of the candidate hormones as its receptor, glucose-dependent insulinotropic polypeptide receptor (GIPR), is expressed in bone.
+
+C0597357	AFFECTS	C1290884
+12235264	66759873	Since many of those are known sources of IL-16, immune cell- and lung cell-expressed H(4) receptors may have a general role in the control of this mediator of inflammatory disorders such as asthma.
+17488971	104252455	It is hypothesized that the antiinflammatory actions of peroxisome proliferator-activated receptors (PPARs) may explain the protective effect of these receptors in diabetes, atherosclerosis, cancer, and other inflammatory diseases.
+21132095	122305703	However, inappropriate utilization or regulation of these receptors is implicated in many inflammatory diseases, cancer and HIV, making them important drug targets.
+22542476	132442370	These receptors play key roles in regulating inflammation and inflammatory diseases.
+22918742	139140955	Nevertheless, given that many of these receptors are distinct from those involved in thrombosis and haemostasis, this raises the real possibility of targeting these receptors to regulate inflammatory diseases without compromising haemostasis.
+22034497	140454066	In particular, UBC13 is required for signaling by a variety of receptors important in immune regulation, making it a candidate target for inflammatory diseases.
+
+oleuropein NEG_INTERACTS_WITH osteocalcin COEXISTS_WITH vitamin_d_receptor ASSOCIATED_WITH rheumatoid_arthriti AFFECTS inflammatory_disease 0.00000
+C0069413 NEG_INTERACTS_WITH C0029419 COEXISTS_WITH C0108082 ASSOCIATED_WITH C0003873 AFFECTS C1290884
+
+C0069413	NEG_INTERACTS_WITH C0029419
+15230995	103809828	At necropsy, oleuropein and olive oil consumption had had no effect on plasma osteocalcin concentrations (marker of bone formation) or on urinary deoxypyridinoline excretion (marker of bone resorption).
+
+C0029419	COEXISTS_WITH C0108082
+1353882	49984064	To ascertain whether variability in circulating osteocalcin levels may reflect allelic variation in the vitamin D receptor gene, we have analyzed the relationship between frequent restriction fragment length polymorphisms (RFLPs, detected by endonucleases Bsm I, EcoRV, and Apa I) that define human vitamin D receptor alleles and serum osteocalcin in a cohort of normal subjects.
+1353882	49984064	To ascertain whether variability in circulating osteocalcin levels may reflect allelic variation in the vitamin D receptor gene, we have analyzed the relationship between frequent restriction fragment length polymorphisms (RFLPs, detected by endonucleases Bsm I, EcoRV, and Apa I) that define human vitamin D receptor alleles and serum osteocalcin in a cohort of normal subjects.
+9438916	67821236	Polymorphism of vitamin D receptor (VDR) gene has been found to be associated with serum osteocalcin (OC) levels and bone mineral density (BMD) in Caucasian identical twins and unrelated postmenopausal women.
+11383910	81426850	The tt VDR genotype was associated with significantly higher serum osteocalcin (29% and 40%) compared with the Tt and TT genotypes, respectively.
+15659793	92005260	The increased osteocalcin expression might reflect the augmented VD-R expression.
+19692484	120671512	Serum C-terminal collagen crosslinks, a marker of bone resorption, were increased in the PT-VDR(-/-) mice with no change in the bone formation marker, serum osteocalcin, consistent with a resorptive effect due to the increased serum PTH levels in the PT-VDR(-/-) mice.
+19492922	128666330	The objective of the present study is to examine whether serum osteocalcin is related to vitamin D receptor (VDR) BsmI polymorphism in pregnant women.
+
+C0108082	ASSOCIATED_WITH	C0003873
+11251690	73036858	The mechanisms by which the VDR polymorphism is associated with RA is unknown, but they could be related to the immunoregulatory properties of vitamin D.
+11306745	81388597	Lack of relationship between vitamin D receptor polymorphism and bone erosion in rheumatoid arthritis.
+11306745	81389177	There was no significant difference in the focal bone erosion score (mean +/- SD) according to the VDR genotypes of RA patients (TT, 0.92 +/- 1.79; Tt, 0.4 +/- 0.79; Bb, 0.43 +/- 0.80; bb, 0.92 +/- 1.79; p > 0.05).
+16151416	93669894	The aim of this study was to investigate the role of vitamin D receptor gene (VDR) in rheumatoid arthritis (RA).
+16151416	93670652	These data suggest that the F allele and F/F VDR genotype are associated with RA.
+15798098	96240940	Physiological and pharmacological actions of 1,25-(OH)(2)D(3) in various systems, along with the detection of VDR in target cells, have indicated potential therapeutic applications of VDR ligands in inflammation (rheumatoid arthritis, psoriatic arthritis), dermatological indications (psoriasis, actinic keratosis, seborrheic dermatitis, photoaging), osteoporosis (postmenopausal and steroid-induced osteoporosis), cancers (prostate, colon, breast, myelodysplasia, leukemia, head and neck squamous cell carcinoma, and basal cell carcinoma), secondary hyperparathyroidism, and autoimmune diseases (systemic lupus erythematosus, type I diabetes, multiple sclerosis, and organ transplantation).
+22859341	135724763	VitD receptor polymorphisms have been variably associated with RA.
+
+C0003873	AFFECTS	C1290884
+9561339	58798251	Some of these agents exert protective effects in different inflammatory disorders such as septic organ failure, rheumatoid arthritis or asthma, whereas others fail to do so.
+10620073	69814231	This study has important implications for many inflammatory diseases such as rheumatoid arthritis, ankylosing spondylitis, and inflammatory bowel disease which are associated with increased NO production and osteoporosis.
+11741347	80614415	This will facilitate studies on the role of cIL-4 in inflammatory diseases, particularly rheumatoid arthritis.
+15654511	90917016	Mast cells play a pathophysiological role in numerous inflammatory diseases as diverse as hypersensitivity reactions, ischemia/reperfusion injury and rheumatoid arthritis.
+15086569	100639329	This phenomenon plays a critical role in several inflammatory diseases, e.g., asthma, atopy, rheumatoid arthritis, psoriasis, and ulcerative colitis.
+22045980	121116376	This article discusses the socioeconomic impact of several IMID, including rheumatoid arthritis, inflammatory bowel disease, ankylosing spondylitis, and psoriasis.
+20688047	123641472	Numerous clinical, physiopathological and epidemiological studies have underlined the detrimental or beneficial role of nutritional factors in complex inflammation related disorders such as allergy, asthma, obesity, type 2 diabetes, cardiovascular disease, rheumatoid arthritis and cancer.
+24320959	153432956	It is also well established that smoking has a negative impact on several inflammatory diseases, including rheumatoid arthritis, multiple sclerosis and inflammatory bowel disease.
+
+
+
+
+quetiapine AUGMENTS prefrontal_cortex LOCATION_OF extracellular_signal-regulated_kinase_2 INTERACTS_WITH gene AFFECTS schizophrenia 0.212325
+C0123091 AUGMENTS C0162783 LOCATION_OF C0170168 INTERACTS_WITH C0017337 AFFECTS C0036341
+
+C0123091	AUGMENTS	C0162783
+15507222	83724046	It is argued that the marked increase of dopaminergic transmission in the prefrontal cortex induced by quetiapine might be relevant to its therapeutical action.
+
+C0162783	LOCATION_OF	C0170168
+22521590	135034880	In this work, we implicated extracellular signal-regulated kinase 2 (ERK2) in the medial prefrontal cortex (mPFC) in mediating social interaction.
+
+C0170168	INTERACTS_WITH	C0017337
+20956553	113602009	Genomic collaboration of estrogen receptor alpha and extracellular signal-regulated kinase 2 in regulating gene and proliferation programs.
+
+C0017337	AFFECTS	C0036341
+1972735	22351836	A number of these characteristics are reminiscent of several manifestations of schizophrenia and therefore we present the hypothesis that one of the genes modified in schizophrenia is directly or indirectly linked to the control of excitatory neurotransmission;
+2888032	31771849	(2) One of the genes modified in schizophrenia is postulated to be directly or indirectly linked to the control of excitatory neurotransmission;
+8117757	40712923	Although there is strong evidence that the manifestation of schizophrenia and bipolar affective disorders is controlled by genes, no evidence for linkage has been established.
+10335546	65508155	To test the involvement of this gene in the development of schizophrenia, we examined genotypes of the SCA1 CAG repeat polymorphism for 49 Caucasian patients with schizophrenia, and 88 Caucasian controls.
+12370818	67744026	Therefore, FRA6F may represent a landmark for the identification and cloning of genes involved in senescence, leukemia, cancer and schizophrenia.
+11930015	68783322	Genes chosen have either been implicated in schizophrenia, make conceptual sense in the light of the current understanding of the disease, or are located on high-susceptibility chromosome locations.
+12769629	69326977	Compounds that normalize genes altered in schizophrenia may better address its underlying causes.
+11673798	70573513	Our results suggest that the repeats within this gene or other genes in the vicinity of this locus are likely to be implicated in bipolar disorder and schizophrenia.
+11673798	70573513	Our results suggest that the repeats within this gene or other genes in the vicinity of this locus are likely to be implicated in bipolar disorder and schizophrenia.
+12030331	77910200	Gene content analyses of the breakpoint junctions revealed disruption of a gene (DIBD1 ) at 11q23, a genomic region that has also been implicated in schizophrenia and Tourette syndrome.
+16081509	84028221	Other genes from this region have also been implicated in schizophrenia, not by systematic mapping but by positional candidate gene analysis;
+17668069	89930253	Intriguingly, chromosomal location analysis of genes significantly altered between schizophrenia and controls revealed clusters at 1p36, 1q42 and 6p22, which have previously been identified as strong susceptibility loci for schizophrenia.
+16969366	91128248	In agreement with the 'continuum theory', which suggests an overlap between these disorders, the existence of genes that affect simultaneously susceptibility to SZ and BPD has been hypothesized.
+16730337	92689907	The neuregulin 1 gene is among the few candidate genes to have been implicated in schizophrenia susceptibility in several populations.
+16640117	93238982	After years of frustration, the search for genes impacting on schizophrenia is now undergoing some exciting developments.
+17464717	93742002	Initial studies have shown that there is a need for a careful validation of genes shown to be affected in schizophrenia using high-throughput technologies.
+15184100	94650767	Molecules involved in neurodevelopment or neurotransmitter function are coded by many of the genes that have been implicated in schizophrenia.
+17106420	95265228	In this study we investigated a total of 15 single nucleotide polymorphisms (SNPs), and all possible haplotypes, of genes that have been previously implicated in schizophrenia or bipolar disorder - RGS4, PRODH, COMT and GRK3 - in a sample of 213 cases with bipolar affective disorder type 1 and 197 controls from Scotland.
+16415041	96117578	The gene for dysbindin-1 (DTNBP1) is located at 6p and has also been implicated in schizophrenia, a neuropsychiatric disorder characterized by cognitive dysfunction.
+17014910	99249248	In addition, genes consistently reported as being altered in schizophrenia play roles in development, neuroplasticity and glutamate/GABAergic neurotransmission.
+17598910	99323446	In this study, we have extended the previously published associations by investigating the involvement of all eight genes from the ERBB and NRG families for association with schizophrenia.
+17851196	104454470	Environmental factors have been shown to moderate the effects of genes on psychiatric disorders such as depression, schizophrenia and ADHD.
+21277191	106292205	On the basis of recent data from candidate region/gene and genome-wide association studies (GWAS) and their follow-up investigations, the number of genes potentially implicated in schizophrenia has been estimated to be over 1000.
+20514075	106548117	The histidine triad nucleotide-binding protein-1 gene (HINT1) is implicated in schizophrenia and in the behavioral effects of morphine and amphetamine.
+21431547	107676370	We compared the set of genes whose expression is modified in schizophrenia, as revealed by our microarray studies, with genes specifically expressed in stem cells, as revealed by studies on human embryonic stem cells.
+18833581	113049112	BACKGROUND: Variations in genes related to the dopaminergic pathway have been implicated in neuropsychiatric disorders such as schizophrenia, substance misuse, Alzheimer's disease and Post Traumatic Stress Disorder (PTSD).
+20874815	114464028	RESULTS: the expression of C14ORF28, GNB2L1, MLLT3, DRD2 and DARPP-32 genes was altered in schizophrenia and/or bipolar disorder samples relative to controls (P < 0.05).
+19370154	118274605	One of the PPI positives corresponds to a region of human chromosome 6p which includes DTNBP1, a gene implicated in schizophrenia.
+19949721	119288494	We sought to identify genes associated with age that are implicated in schizophrenia.
+19118813	120139230	NRG3 is primarily expressed in the central nervous system and is one of three paralogs of NRG1, a gene strongly implicated in SZ.
+21091867	122203045	The Disrupted-in-Schizophrenia-1 (DISC1) gene has been implicated in both schizophrenia and bipolar disorder by linkage and genetic association studies.
+19367584	122751096	The Neuregulin 1 (NRG1) gene was initially implicated in schizophrenia (SZ) and has recently been associated with bipolar disorder (BPD) in two studies.
+18552348	126098874	Many genes implicated in schizophrenia can be related to glutamatergic transmission and neuroplasticity, oligodendrocyte function, and other families clearly related to neurobiology and schizophrenia phenotypes.
+18552348	126098874	Many genes implicated in schizophrenia can be related to glutamatergic transmission and neuroplasticity, oligodendrocyte function, and other families clearly related to neurobiology and schizophrenia phenotypes.
+19303839	126852709	The protein DISC1, encoded by a gene implicated in schizophrenia susceptibility, regulates the development of postmitotic neurons.
+23143521	131905887	The identified networks are functionally related to genes previously implicated in schizophrenia, autism and intellectual disability.
+22911901	134991967	The observed results suggest the involvement of DTNBP1 not only in the development of attention deficit of schizophrenia, but also in the inter-individual variability of this cognitive domain within the normal functional range.
+22161352	135443018	We found 2,577 and 477 genes specifically altered in BD and SZ, respectively.
+22567321	135675305	Many genes have been implicated in schizophrenia as have viral prenatal or adult infections and toxoplasmosis or Lyme disease.
+22309971	136350236	CONTEXT: GAD67 regulation involves a network of genes implicated in schizophrenia and bipolar disorder.
+22954356	139792127	A combined analysis of microarray gene expression studies of the human prefrontal cortex identifies genes implicated in schizophrenia.
+22920393	141311256	Many of these are in genes previously implicated in schizophrenia and other neuropsychiatric diseases.
+22920393	141311256	Many of these are in genes previously implicated in schizophrenia and other neuropsychiatric diseases.
+22446566	142262358	The failure to find genes of major effect in schizophrenia has refocused attention on nongenetic, including infectious factors.
+23395714	145528757	In conclusion, the expression of genes from the major histocompatibility complex region of chromosome 6 with likely roles in synaptic development is altered in schizophrenia.
+24043878	147158955	SNPs with suggestive P values were identified within 2 genes that have been previously implicated in schizophrenia, MECP2 (rs2734647, P combined = 8.78x10-7, OR = 1.28; rs2239464, P combined = 6.71x10-6, OR = 1.26) and ARHGAP4 (rs2269368, P combined = 4.74x10-7, OR = 1.25).
+23528911	151626438	The expression patterns of a variety of genes, many of which are associated with the GABAergic system, were altered in SZ when compared with controls.
+24098394	151961422	Overall, pathway analysis revealed that differentially expressed genes that showed higher levels of expression in neurons derived from T-iPSCs were enriched for genes implicated in schizophrenia (SZ).
+24365204	153084742	In order to interpret the functional role of the genetic variants and detect the combined effects of some of these genes on schizophrenia, protein-interaction-network-based analysis (PINBA) has emerged as an effective approach.
+24876161	157101422	A major research priority has been the identification of the mRNA targets of FMRP, particularly as recent studies suggest an excess of FMRP targets among genes implicated in idiopathic autism and schizophrenia.
+24936775	157811022	Research has yet to confirm which genes within the deletion region are implicated in schizophrenia.
+24926463	157865880	Our case may be a potential clue which supports the hypothesis for involvement of genes on X chromosome in development of schizophrenia.
+
+
+-----------------------------------------------------------------------
+-----------------------
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+ [{
+            name: 'oleuropein',
+            x: 100,
+            y: 300,
+            value:'C0069413'
+        } ,{
+            name: 'cleavage',
+            x: 300,
+            y: 100,
+            value: 'C1330957'
+            
+            
+        } ,{
+            name: 'prl',
+            x: 500,
+            y: 100,
+            value: 'C0033371'
+            
+        } ,{
+            name: 'angiogenesis',
+            x: 700,
+            y: 100,
+            value: 'C0302600'
+            
+        } ,{
+            name: 'inflammatory_disease',
+            x: 1100,
+            y: 300,
+            value: 'C1290884'  
+        } ,{
+            name: 'oxidative_stress',
+            x: 300,
+            y: 300,
+            value: 'C0242606'
+        },{
+            name: 'lipoxygenase',
+            x: 500,
+            y: 300,
+            value: 'C0023837'
+        }, {
+            name: 'angiogenesi',
+            x: 700,
+            y: 300,
+            value: 'C0302600'
+        }
+        ]

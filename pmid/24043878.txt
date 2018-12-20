@@ -1,0 +1,1 @@
+SNPs with suggestive P values were identified within 2 genes that have been previously implicated in schizophrenia, MECP2 (rs2734647, P combined = 8.78x10-7, OR = 1.28; rs2239464, P combined = 6.71x10-6, OR = 1.26) and ARHGAP4 (rs2269368, P combined = 4.74x10-7, OR = 1.25).

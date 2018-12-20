@@ -1,0 +1,1 @@
+RNA knockdown of 12-lipoxygenase (12-LO) expression attenuates VEGF-induced angiogenesis in HUVECs, and the addition of 12(S)-HETE to the 12-LO knockdown-HUVECs restores VEGF-induced angiogenesis.
